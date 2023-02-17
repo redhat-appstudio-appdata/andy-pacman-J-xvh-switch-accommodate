@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: pacman-kilz
+  namespace: abrarenrh-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:18f7430fb7a80dda391824eb8b43038178da00af1d4755eba2f6037428e06621
+        name: my-nodejs
+        resources: {}
+status: {}
