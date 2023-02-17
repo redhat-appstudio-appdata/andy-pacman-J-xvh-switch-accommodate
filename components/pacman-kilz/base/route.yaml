@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: pacman-kilz
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: pacman-kilz
+    app.kubernetes.io/part-of: andy-pacman
+  name: pacman-kilz
+  namespace: abrarenrh-tenant
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: pacman-kilz
+    weight: null
+status: {}
