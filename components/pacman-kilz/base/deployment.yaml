@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: pacman-kilz
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:abrarenrh-tenant-pacman-kilz
+      - image: quay.io/redhat-appstudio/user-workload@sha256:18f7430fb7a80dda391824eb8b43038178da00af1d4755eba2f6037428e06621
         name: my-nodejs
         ports:
         - containerPort: 3001
